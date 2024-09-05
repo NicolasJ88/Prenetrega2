@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <link rel="stylesheet" href="../TP/style.css">
+    <link rel="stylesheet" href="../TP/app.js">
+</head>
+
+
+<body>
+<div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href=""><img src="https://www.iconarchive.com/download/i111659/fa-team/fontawesome-brands/FontAwesome-Brands-Xbox.1024.png" alt="XStore" width="60px" /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="camisetas.html">Camisetas</a></li>
+            <li><a href="#">Pantalones</a></li>
+            <li><a href="#">Zapatillas</a></li>
+            <li><a href="*">Conjuntos</a></li>
+            <li><a href="registro.html">Registrate</a></li>
+          </ul>
+        </nav>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Buscar...">
+      </div>
+      <ul id="itemList"></ul>
+        <a href="carrito.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+      </div>
+
+      <script src="../TP/app.js"></script>
+
+      <div class="row">
+        <div class="col-2">
+          <h1>
+            Dale Un Nuevo Estilo<br />
+            A Tu Entrenamiento!
+          </h1>
+          <p>
+            El éxito no siempre se trata de grandeza. Se trata de constancia. El trabajo duro constante genera éxito. La grandeza llegará.
+          </p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="https://png.pngtree.com/png-vector/20240128/ourmid/pngtree-silhouette-of-a-soccer-player-png-image_11508189.png" alt="" />   <!-- Imagen barra verde--> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+        <button class="btn" onclick="clearDisplay()">C</button>
+        <button class="btn" onclick="appendToDisplay('/')">/</button>
+        <button class="btn" onclick="appendToDisplay('*')">*</button>
+        <button class="btn" onclick="appendToDisplay('-')">-</button>
+        <button class="btn" onclick="appendToDisplay('+')">+</button>
+        <button class="btn" onclick="appendToDisplay('0')">0</button>
+        <button class="btn" onclick="appendToDisplay('1')">1</button>
+        <button class="btn" onclick="appendToDisplay('2')">2</button>
+        <button class="btn" onclick="appendToDisplay('3')">3</button>
+        <button class="btn" onclick="appendToDisplay('4')">4</button>
+        <button class="btn" onclick="appendToDisplay('5')">5</button>
+        <button class="btn" onclick="appendToDisplay('6')">6</button>
+        <button class="btn" onclick="appendToDisplay('7')">7</button>
+        <button class="btn" onclick="appendToDisplay('8')">8</button>
+        <button class="btn" onclick="appendToDisplay('9')">9</button>
+        <button class="btn" onclick="appendToDisplay('.')">.</button>
+        <button class="btn equal" onclick="calculate()">=</button>
+    </div>
+</div>
+  <!-- Featured categories -->
+  <div class="categories">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <img src="https://jpl.a.bigcontent.io/v1/static/modelo-nike-air-max-90-3a25ea4ad5b7e5b4e5d0fc8b9a4cafd3" alt="" />
+        </div>
+        <div class="col-3">
+          <img src="https://img.planetafobal.com/2020/12/neymar-jr-puma-future-z-2020-2021-kl-1024x1024.jpg" alt="" /> <!-- Primeras ters imagenes--> 
+        </div>
+        <div class="col-3">
+          <img src="https://f.fcdn.app/imgs/ad1874/www.inboxstore.com.uy/inbouy/2eb8/original/catalogo/ADIK4026_1645_3/1500-1500/campera-adidas-adicolor-classics-oversized-sst-negro.jpg" alt="" />
+        </div>
+    
+      </div>
+    </div>
+  </div>
+  
+ <!-- PRODUCTOS -->
+
+
+<div id="products-container">
+  <!-- Productos de ejemplo -->
+  <div class="product" data-price="30">Producto A - $30</div>
+  <div class="product" data-price="10">Producto B - $10</div>
+  <div class="product" data-price="20">Producto C - $20</div>
+</div>
+<!--Aca va el filtro-->
+
+  <div class="small-container">
+    <h2 class="title">Productos Destacados</h2>
+    <div class="row">
+      <div class="col-4">
+        <a><img src="https://i.pinimg.com/736x/02/60/4f/02604f1a424e2cc8ebe5ce47eb8bc21a.jpg" alt="Jordans Rosa" /></a>
+          <h4>Air Jordan Mid Pink</h4>
+        </a>
+        <div class="rating">
+         
+        </div>
+        <p class="product" data-price="$186.000">$186.000</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/jnighv6j24navz8l7xa5/t-shirt-sportswear-GQFmbc.jpg" alt="" />
+        <h4>Camiseta Nike Negra</h4>
+        <div class="rating">
+        </div>
+        <p class="product" data-price="$135.000">$135.000</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://i1.adis.ws/i/jpl/jd_177184_a?qlt=80&w=600&h=765&v=1" alt="" />
+        <h4>Pantalón Deportivo Mujer Adidas</h4>
+        <div class="rating">
+        </div>
+        <p class="product" data-price="$90.000">$90.000</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://mlstaticquic-a.akamaihd.net/campera-de-algodon-dama-puma-original-88452-senec-D_NQ_NP_843070-MLU27841095445_072018-F.jpg" alt="" />
+        <h4>Conjunto Puma Mujer</h4>
+        <div class="rating">
+        </div>
+        <p class="product" data-price="$356.000">$356.000</p>
+      </div>
+    </div>
+
+
+    <h2 class="title">Últimos Productos</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw5db6fa5a/products/PU530095-94/PU530095-94-1.JPG" alt="" />
+        <h4>Campera Puma Roja Azul</h4>
+        <div class="rating">
+        </div>
+        <p class="product" data-price="$225.000">$225.000</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://res.cloudinary.com/futbol-factory/image/upload/c_pad,f_auto,h_2000,w_1600/v1/products/233463_1.jpg" alt="" />
+        <h4>Camiseta Argentina 2022</h4>
+        <div class="rating">
+        </div>
+        <p class="product" data-price="$186.000">$186.000</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://www.tripstore.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/B/V/BV3455-010_0.jpg" alt="" />
+        <h4>Campera Deportiva Nike</h4>
+        <div class="rating">
+        </div>
+        <p class="product" data-price="$167.999">$167.999</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/7c6bb233-27c1-4497-82fb-483b7958e4e7/pantalones-de-f%C3%BAtbol-dri-fit-academy-M0G9Jp.jpg" alt="" />
+        <h4>Pantalón Deportivo Nike</h4>
+        <div class="rating"></div>
+        <p class="product" data-price="$99.000">$99.000</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-4">
+        <img src="https://www.zapatosmayka.es/documents/images/73500-5.jpg" alt="" />
+        <h4>Zapatillas Puma X-Ray</h4>
+        <div class="rating"></div>
+        <p class="product" data-price="$139.999">$139.999</p>
+
+      </div>
+  
+      <div class="col-4">
+        <img src="https://www.prodirectsoccer.com/es/productimages/V3_1_Main/150122.jpg" alt="" />
+        <h4>Botines Nike Mercury Verdes</h4>
+        <div class="rating"></div>
+        <p class="product" data-price="$149.999">$149.999</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://img01.ztat.net/article/spp-media-p1/1d5695afbc244a02a73f9fd9742bd672/8c12a38d3fee4f56bb2f5170e94e1163.jpg?imwidth=762" alt="" />
+        <h4>Conjunto Puma Mujer</h4>
+        <div class="rating"></div>
+        <p class="product" data-price="$350.000">$350.000</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating"></div>
+        <p class="product" data-price="$239.999">$239.999</p>
+      </div>
+    </div>
+  </div>
+<!-- PRODUCTOS -->
+
+  <!-- oferta -->
+  <div class="offer">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <img src="https://preview.redd.it/unofficial-air-prowler-jordan-1s-stash-utility-preorder-v0-jt7ofsfp80bb1.png?width=640&crop=smart&auto=webp&s=38a16244633eaa81a24313397f471a6eb3721dfd" alt="" class="offer-img" />
+        </div>
+        <div class="col-2">
+          <p>Exclusivamente en X-Store</p>
+          <h1>Air Jordan 1 Prowler Edition</h1>
+          <small>Las Air Jordan 1 Prowler Edition son una edición especial de la última película de Spiderman Atraves del Spiderverso.</small>
+          <br />
+          <a href="#" class="btn">Comprar Ahora &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>  <!-- oferta -->
+  
+
+
+  <!-- Testimonial -->
+  <h2 class="title">Exclusivos</h2>
+  <div class="testimonial">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <i class="fas fa-quote-left"></i>
+          <div class="rating"></div>
+          <img src="https://nikearprod.vtexassets.com/arquivos/ids/1037185-1200-1200?width=1200&height=1200&aspect=true" alt="" />
+          <h3>Air Jordan Retro High OG</h3>
+        </div>
+  
+        <div class="col-3">
+          <i class="fas fa-quote-left"></i>
+          <div class="rating"></div>
+          <img src="https://nikearprod.vtexassets.com/arquivos/ids/870477-1200-1200?width=1200&height=1200&aspect=true" alt="" />
+          <h3>Nike Zion Unisex</h3>
+        </div>
+  
+        <div class="col-3">
+          <i class="fas fa-quote-left"></i>
+          <div class="rating"></div>
+          <img src="https://nikearprod.vtexassets.com/arquivos/ids/869515-1200-1200?width=1200&height=1200&aspect=true" alt="" />
+          <h3>Air Jordan 1 Low</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonial -->
+
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Descarga nuestra App</h3>
+          <p>Descarga nuestra app en Android, IOS y Celulares</p>
+          <div class="app-logo">
+            <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+            <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+          </div>
+        </div>
+  
+        <div class="footer-col-2">
+            <img src="https://www.iconarchive.com/download/i111659/fa-team/fontawesome-brands/FontAwesome-Brands-Xbox.1024.png" alt="XStore" width="60px" /></a>
+          <p>
+            Nuestro proposito es darle un rediseño a la moda actual.
+          </p>
+        </div>
+  
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="registro.html">Valoranos</a></li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+  
+        <div class="footer-col-4">
+          <h3>Seguinos</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright &copy; 2024 - XStore</p>
+    </div>
+  </div>
+</body>  
+  <!-- js for toggle menu -->
+  <script>
+    var MenuItems = document.getElementById('MenuItems');
+    MenuItems.style.maxHeight = '0px';
+  
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == '0px') {
+        MenuItems.style.maxHeight = '200px';
+      } else {
+        MenuItems.style.maxHeight = '0px';
+      }
+    }
+  </script>

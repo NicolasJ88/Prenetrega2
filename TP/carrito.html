@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <link rel="stylesheet" href="../TP/index.html">
+    <link rel="stylesheet" href="../TP/style.css">
+</head>
+
+
+<body>
+<div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href=""><img src="https://www.iconarchive.com/download/i111659/fa-team/fontawesome-brands/FontAwesome-Brands-Xbox.1024.png" alt="XStore" width="60px" /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="camisetas.html">Camisetas</a></li>
+            <li><a href="#">Pantalones</a></li>
+            <li><a href="#">Zapatillas</a></li>
+            <li><a href="account.html">Conjuntos</a></li>
+          </ul>
+        </nav>
+        <a href="carrito.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  
+ <!-- PRODUCTOS -->
+
+<section class="contenedor">
+            <!-- Contenedor de elementos -->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Box Engasse</span>
+                    <img src="img/boxengasse.png" alt="" class="img-item">
+                    <span class="precio-item">$15.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">English Horse</span>
+                    <img src="img/englishrose.png" alt="" class="img-item">
+                    <span class="precio-item">$25.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Knock Nap</span>
+                    <img src="img/knocknap.png" alt="" class="img-item">
+                    <span class="precio-item">$35.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">La Night</span>
+                    <img src="img/lanight.png" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Silver All</span>
+                    <img src="img/silverall.png" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Skin Glam</span>
+                    <img src="img/skinglam.png" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Midimix</span>
+                    <img src="img/midimix.png" alt="" class="img-item">
+                    <span class="precio-item">$54.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Sir Blue</span>
+                    <img src="img/sirblue.png" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Middlesteel</span>
+                    <img src="img/middlesteel.png" alt="" class="img-item">
+                    <span class="precio-item">$42.800</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+    
+                <div class="carrito-items"></div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+            </div>
+        </section>
+
+    <h2 class="title">Últimos Productos</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+            <h4>Camiseta River Plate 2023/24</h4>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>$239.999</p>
+          </div>
+  
+      <div class="col-4">
+        <img src="https://res.cloudinary.com/futbol-factory/image/upload/c_pad,f_auto,h_2000,w_1600/v1/products/233463_1.jpg" alt="" />
+        <h4>Camiseta Argentina 2022</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$186.000</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+  
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+      
+      <div class="col-4">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt380bb4c36789774f/644bc78a60213d0b19716510/Snapinsta.app_343289747_746631953680500_7161692276090281129_n_1080.jpg?format=pjpg&auto=webp&width=3840&quality=60" alt="" />
+        <h4>Camiseta River Plate 2023/24</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>$239.999</p>
+      </div>
+    </div>
+  </div>
+<!-- PRODUCTOS -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Descarga nuestra App</h3>
+          <p>Descarga nuestra app en Android, IOS y Celulares</p>
+          <div class="app-logo">
+            <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+            <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+          </div>
+        </div>
+  
+        <div class="footer-col-2">
+            <img src="https://www.iconarchive.com/download/i111659/fa-team/fontawesome-brands/FontAwesome-Brands-Xbox.1024.png" alt="XStore" width="60px" /></a>
+          <p>
+            Nuestro proposito es darle un rediseño a la moda actual.
+          </p>
+        </div>
+  
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+  
+        <div class="footer-col-4">
+          <h3>Seguinos</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright &copy; 2024 - XStore</p>
+    </div>
+  </div>
+</body>  
+  <!-- js for toggle menu -->
+  <script>
+    var MenuItems = document.getElementById('MenuItems');
+    MenuItems.style.maxHeight = '0px';
+  
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == '0px') {
+        MenuItems.style.maxHeight = '200px';
+      } else {
+        MenuItems.style.maxHeight = '0px';
+      }
+    }
+  </script>
